@@ -1,11 +1,11 @@
 // module
 
 var superModule = (function(){
-  var secret = 'mysecretcode';
-  var password = 12345;
+  var email = 'mymail@web.com';
+  var password = 'guessme';
 
-  function getSecret(){
-    console.log(secret);
+  function getMail(){
+    console.log(email);
   }
 
   function getPassword(){
@@ -13,13 +13,13 @@ var superModule = (function(){
   }
 
   return {
-    getSecret: getSecret,
+    getMail: getMail,
     getPassword: getPassword
   };
 
 })();
 
 
-superModule.getSecret();
+superModule.getMail();
 
 superModule.getPassword();
